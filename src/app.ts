@@ -6,7 +6,7 @@ import { handleApplicationErrors } from '@/middlewares';
 import { authenticationRouter, usersRouter } from '@/routers';
 
 const app = express();
-const port = process.env.PORT;
+const port = +process.env.PORT;
 
 app
   .use(cors())
